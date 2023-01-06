@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
   background-color: white;
   height: 300px;
   width: 300px;
@@ -17,21 +17,23 @@
   transform-style: preserve-3d;
   transition: 1500ms;
   cursor: pointer;
-  transform: perspective(5000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  transform: perspective(5000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
 }
 
 .card:hover {
   --translate-y: -2px;
   --rotate-y: 180deg;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   padding: 1rem;
   color: black;
   backface-visibility: hidden;
-  transform: rotateX(0deg)
+  transform: rotateX(0deg);
 }
 
 .front {
@@ -66,11 +68,10 @@
   padding: 15px;
 }
 
-
 .action-buttons {
   text-align: center;
 }
 
-.prev-next-btns{
+.prev-next-btns {
   color: white;
 }
